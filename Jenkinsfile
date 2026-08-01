@@ -1,74 +1,16 @@
-pipeline {
+stage('Test Application') {
+    steps {
+        sh '''
+        docker rm -f test-container || true
 
-    agent any
+        docker run -d --name test-container -p 5001:5000 flask-jenkins-app
 
-    stages {
+        sleep 5
 
-        stage('Git Check') {
-            steps {
-                sh 'git --version'
-            }
-        }
+        curl localhost:5001
 
-
-        stage('Build Docker Image') {
-            steps {
-                sh 'docker build -t flask-jenkins-app .'
-            }
-        }
-
-
-        stage('Test Application') {
-            steps {
-                sh '''
-                docker run -d --name test-container -p 5000:5000 flask-jenkins-app
-
-                sleep 5
-
-                curl localhost:5000
-
-                docker stop test-container
-                docker rm test-container
-                '''
-            }
-        }
-
-
-        stage('Deploy Container') {
-            steps {
-                sh '''
-                docker rm -f flask-container || true
-
-                docker run -d \
-                --name flask-container \
-                -p 5000:5000 \
-                flask-jenkins-app
-                '''
-            }
-        }
-
-
-        stage('Cleanup') {
-            steps {
-                sh '''
-                docker image prune -f
-                '''
-            }
-        }
-
+        docker stop test-container
+        docker rm test-container
+        '''
     }
-
-
-    post {
-
-        success {
-            echo 'CI/CD Pipeline Completed Successfully 🚀'
-        }
-
-        failure {
-            echo 'Pipeline Failed ❌'
-        }
-
-    }
-
 }
