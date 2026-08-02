@@ -194,3 +194,12 @@ Application deployed on Kubernetes using Minikube.
 ### Flask Application Running on Kubernetes
 
 ![Flask Kubernetes Output](screenshots/flask-kubernetes-output.png)
+
+
+## 👩‍💻 Author
+
+**Rashmi Gujari**
+
+GitHub: https://github.com/rashmigujuri14
+
+LinkedIn: https://www.linkedin.com/in/rashmi-gujari-4b89bb373/
