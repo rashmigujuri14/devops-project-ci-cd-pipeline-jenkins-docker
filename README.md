@@ -179,10 +179,18 @@ Application deployed on Kubernetes using Minikube.
 - Kubernetes Service
 - kubectl commands
 
-### Screenshots
+## 📸 Screenshots
 
-Kubernetes Pods Running
+### Kubernetes Pods Running
 
-Kubernetes Service
+![Kubernetes Pods](screenshots/kubernetes-pods.png)
 
-Flask Application Running on Kubernetes
+
+### Kubernetes Service
+
+![Kubernetes Service](screenshots/kubernetes-pods.png)
+
+
+### Flask Application Running on Kubernetes
+
+![Flask Kubernetes Output](screenshots/flask-kubernetes-output.png)
