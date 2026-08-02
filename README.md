@@ -42,7 +42,6 @@ Jenkins Pipeline
     ▼
 Running Flask Application
 ```
-
 ---
 
 ## 📂 Project Structure
@@ -156,3 +155,34 @@ http://10.142.10.182:5000
 **Rashmi Gujari**
 
 GitHub: https://github.com/rashmigujuri14
+
+
+
+## Kubernetes Deployment
+
+Application deployed on Kubernetes using Minikube.
+
+### Implementation Steps
+
+1. Built Docker image for Flask application
+2. Loaded Docker image into Minikube
+3. Created Kubernetes Deployment
+4. Created Kubernetes Service
+5. Updated application using rolling deployment
+6. Verified application running inside Kubernetes cluster
+
+### Kubernetes Components Used
+
+- Minikube
+- Kubernetes Deployment
+- Kubernetes Pods
+- Kubernetes Service
+- kubectl commands
+
+### Screenshots
+
+Kubernetes Pods Running
+
+Kubernetes Service
+
+Flask Application Running on Kubernetes
