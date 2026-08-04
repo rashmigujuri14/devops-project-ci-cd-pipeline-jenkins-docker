@@ -188,6 +188,15 @@ Application deployed on Kubernetes using Minikube.
 ![Flask Kubernetes Output](screenshots/flask-kubernetes-output.png)
 
 
+## 🎯 Project Outcome
+
+- Successfully deployed the Flask application on Kubernetes using Minikube.
+- Created and managed Kubernetes Deployments and Services.
+- Learned Kubernetes architecture including Pods, Deployments, and Services.
+- Performed application updates using Kubernetes rolling deployment.
+- Verified application accessibility inside the Kubernetes cluster.
+- Gained hands-on experience with `kubectl` commands and YAML configuration files.
+
 ---
 
 # ☁️ Project 3 :- AWS EC2 Docker Deployment
@@ -284,7 +293,17 @@ curl http://localhost:5000
 ### 🔐 SSH Connected using MobaXterm
 
 ![SSH Connected](screenshots/ssh-connected.png)
+---
 
+## 🎯 Project Outcome
+
+- Successfully launched an AWS EC2 Ubuntu instance.
+- Connected securely to the EC2 instance using SSH through MobaXterm.
+- Cloned the project repository from GitHub to the EC2 server.
+- Built and deployed the Flask application using Docker.
+- Configured AWS Security Groups to allow application access.
+- Successfully accessed the application through the EC2 Public IP address.
+- Gained hands-on experience with cloud deployment on AWS EC2.
 ---
 
 # 👩‍💻 Author
