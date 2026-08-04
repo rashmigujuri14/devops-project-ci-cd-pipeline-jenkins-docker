@@ -1,5 +1,5 @@
 
-# 🚀 CI/CD Pipeline using Jenkins + Docker
+# 🚀Project 1 :-  CI/CD Pipeline using Jenkins + Docker
 
 ## 📌 Project Overview
 
@@ -150,15 +150,7 @@ http://10.142.10.182:5000
 
 ---
 
-## 👩‍💻 Author
-
-**Rashmi Gujari**
-
-GitHub: https://github.com/rashmigujuri14
-
-
-
-## Kubernetes Deployment
+## Project 2 :- Kubernetes Deployment
 
 Application deployed on Kubernetes using Minikube.
 
@@ -196,9 +188,112 @@ Application deployed on Kubernetes using Minikube.
 ![Flask Kubernetes Output](screenshots/flask-kubernetes-output.png)
 
 
-## 👩‍💻 Author
+---
+
+# ☁️ Project 3 :- AWS EC2 Docker Deployment
+
+## 📌 Project Overview
+
+This project demonstrates deployment of a Python Flask application on an AWS EC2 Ubuntu server using Docker.
+
+The application source code was cloned from GitHub into an AWS EC2 instance, Dockerized, and deployed successfully. The application was then accessed using the EC2 Public IP address.
+
+---
+
+## 🛠️ Technologies Used
+
+- AWS EC2
+- Ubuntu Server
+- Docker
+- Git
+- GitHub
+- Python
+- Flask
+- MobaXterm (SSH)
+
+---
+
+## 🚀 Implementation Steps
+
+- Created AWS Free Tier account
+- Completed AWS customer verification
+- Launched Ubuntu EC2 instance
+- Created and downloaded EC2 Key Pair
+- Connected EC2 using MobaXterm via SSH
+- Verified Docker and Git installation
+- Cloned project from GitHub
+- Built Docker image
+- Started Docker container
+- Configured AWS Security Group
+- Allowed Port 5000
+- Accessed application using EC2 Public IP
+
+---
+
+## 🐳 Docker Commands Used
+
+Clone Repository
+
+```bash
+git clone https://github.com/rashmigujuri14/devops-project-ci-cd-pipeline-jenkins-docker.git
+```
+
+Build Docker Image
+
+```bash
+docker build -t flask-app .
+```
+
+Run Docker Container
+
+```bash
+docker run -d -p 5000:5000 --name flask-container flask-app
+```
+
+Check Running Container
+
+```bash
+docker ps
+```
+
+Check Application
+
+```bash
+curl http://localhost:5000
+```
+
+---
+
+## ☁️ AWS Services Used
+
+- EC2
+- Security Groups
+- Key Pair
+- Public IPv4
+
+---
+
+## 📸 Screenshots
+
+### 🖥️ EC2 Instance Running
+
+![EC2 Instance](screenshots/ec2-instance.png)
+
+---
+
+### 🔐 SSH Connected using MobaXterm
+
+![SSH Connected](screenshots/ssh-connected.png)
+
+---
+
+# 👩‍💻 Author
 
 **Rashmi Gujari**
+
+Project 1 - Jenkins + Docker
+Project 2 - Kubernetes
+Project 3 - AWS EC2 Docker Deployment
 
 GitHub: https://github.com/rashmigujuri14
 
